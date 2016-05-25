@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="26px" viewBox="0 0 13 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>fb</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Identi_Wireframe" transform="translate(-666.000000, -4485.000000)" fill="#006AA5">
+            <g id="footer" transform="translate(0.000000, 4454.000000)">
+                <g id="social-icons" transform="translate(666.000000, 31.000000)">
+                    <g id="fb">
+                        <path d="M8.01829167,8.30036735 L8.01829167,5.63987755 C8.01829167,4.64073469 8.69429167,4.40779592 9.17041667,4.40779592 L12.0927083,4.40779592 L12.0927083,0.0153877551 L8.068125,0 C3.60045833,0 2.58375,3.276 2.58375,5.37244898 L2.58375,8.30036735 L1.77635684e-15,8.30036735 L1.77635684e-15,12.8264898 L2.58375,12.8264898 L2.58375,25.6338776 L8.01829167,25.6338776 L8.01829167,12.8264898 L11.685375,12.8264898 L12.1593333,8.30036735 L8.01829167,8.30036735 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

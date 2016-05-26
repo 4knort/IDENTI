@@ -3,13 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>IDENTI</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header class="main-header">
+    <div id="trailer" class="is_overlay">
+      <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+        <source src="video/identi.mp4" type="video/mp4">
+        <source src="video/identi.webm" type="video/webm">
+        <!-- <source src="//www.youtube.com/watch?v=mwJI4Vu5wSM&feature=em-upload_owner" > -->
+      </video>
+    </div>
     <div class="main-header__top-wrap clearfix">
-      <a href="#" class="logo to-left"><img src="img/logo.png" alt=""></a>
+      <a href="#" class="logo to-left logo--top"><img src="img/logo.png" alt=""></a>
       <div class="header-social to-right">
         <a href="#" class="header-social__link">Contact us</a>
         <a href="#" class="header-social__link header-social__link--fb"></a>
@@ -17,26 +25,24 @@
         <a href="#" class="header-social__link header-social__link--insta"></a>
       </div>
     </div>
-    <div class="container">
       <h1 class="main-header__title">
         Performance marketing to engage audiences
       </h1>
+    <div class="partners"> 
+      <!-- <div class="container"> -->
+        <a href="#" class="partners__link"><img src="img/partner1_1x.png" alt=""></a>
+        <a href="#" class="partners__link"><img src="img/partner2_1x.png" alt=""></a>
+        <a href="#" class="partners__link"><img src="img/partner3_1x.png" alt=""></a>
+        <a href="#" class="partners__link"><img src="img/partner4_1x.png" alt=""></a>
+        <a href="#" class="partners__link"><img src="img/partner5_1x.png" alt=""></a>
+        <a href="#" class="partners__link"><img src="img/partner6_1x.png" alt=""></a>
+      <!-- </div> -->
     </div>
   </header>
   <main class="content">
-    <div class="partners"> 
-      <div class="container row">
-        <a href="#" class="partners__link col lg-2"><img src="" alt=""></a>
-        <a href="#" class="partners__link col lg-2"><img src="" alt=""></a>
-        <a href="#" class="partners__link col lg-2"><img src="" alt=""></a>
-        <a href="#" class="partners__link col lg-2"><img src="" alt=""></a>
-        <a href="#" class="partners__link col lg-2"><img src="" alt=""></a>
-        <a href="#" class="partners__link col lg-2"><img src="" alt=""></a>
-      </div>
-    </div>
     <div class="about-us">
       <div class="container row">
-        <div class="description col lg-5">
+        <div class="description col lg-5 description--left " >
           <h2 class="description__title">About Us</h2>
           <h3 class="description__title-small">Effective digital marketing campaigns</h3>
           <p class="description__text">
@@ -46,14 +52,14 @@
             We leverage unique technologies, proprietary data & years of experience to design creative digital marketing campaigns that yield positive ROIs.
           </p>
         </div>  
-        <div class="description-image col lg-6 to-right"></div>
+        <div class="description-image col lg-6 to-right"><img src="img/about-us_img.svg" alt=""></div>
       </div>
     </div>
     <div class="container">
       <h2 class="content-title">Secret Sauce</h2>
       <div class="expertise row">
-        <div class="description-image col lg-6"></div>
-        <div class="description col lg-5 to-right">
+        <div class="description-image col lg-6"><img src="img/expertise_icon.svg" alt=""></div>
+        <div class="description description--left col lg-5 to-right">
           <h2 class="description__title">Expertise</h2>
           <h3 class="description__title-small">Effective digital marketing campaigns</h3>
           <p class="description__text">
@@ -64,19 +70,19 @@
     </div>
     <div class="creativity">
       <div class="container row">
-        <div class="description col lg-5">
+        <div class="description description--left col lg-5">
           <h2 class="description__title">Creativity</h2>
           <h3 class="description__title-small">Effective digital marketing campaigns</h3>
           <p class="description__text">
             You can't use up creativity. The more you use, the more you have. Years of experience (read: mistakes) enable us to come up with new and creative approaches to digital media and generate measurable results.
           </p>
         </div>  
-        <div class="description-image col lg-4 to-right"></div>
+        <div class="description-image col lg-5 to-right"><img src="img/creativity-icon.svg" alt=""></div>
       </div>
     </div>
     <div class="container">
       <div class="technology row">
-          <div class="description-image col lg-5"></div>
+          <div class="description-image col lg-5"><img src="img/technology-icon.svg" alt=""></div>
           <div class="description">
             <h2 class="description__title">Technology</h2>
             <h3 class="description__title-small">Effective digital marketing campaigns</h3>
@@ -88,14 +94,14 @@
     </div>
     <div class="data">
       <div class="container row">
-        <div class="description col lg-5">
+        <div class="description description--left col lg-5">
           <h2 class="description__title">Data</h2>
           <h3 class="description__title-small">Effective digital marketing campaigns</h3>
           <p class="description__text">
             Data is the new oil - the fuel that powers identi’s movement. We leverage a large pool of customer profiles in order to target our communication more effectively with hundreds of campaign data points are analysed continuously & meticulously on a daily basis in order to optimise the efficiency of the media spend.
           </p>
         </div>  
-        <div class="description-image col lg-6 to-right"></div>
+        <div class="description-image col lg-6 to-right"><img src="img/data-icon.svg" alt=""></div>
       </div>
     </div>
     <div class="contacts">

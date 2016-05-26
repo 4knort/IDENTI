@@ -383,7 +383,7 @@ body {
   line-height: 30px;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  min-width: 320px;
 }
 input {
   font-family: "Montserrat";
@@ -421,16 +421,22 @@ button:focus {
   max-width: 1200px;
   margin: 0 auto;
 }
+.col {
+  float: left;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.col:first-child {
+  padding-left: 0;
+}
+.col:last-child {
+  padding-right: 0;
+}
 .to-right {
   float: right;
 }
 .to-left {
   float: left;
-}
-.col {
-  float: left;
-  padding: 0 15px;
-  box-sizing: border-box;
 }
 @media (max-width: 780px) {
   .row .col:first-child {
@@ -445,30 +451,72 @@ button:focus {
   display: block;
   clear: both;
 }
+.lg-2 {
+  width: 16.66666667%;
+}
+.lg-3 {
+  width: 33.33333333%;
+}
+.lg-5 {
+  width: 41.66666667%;
+}
+.lg-6 {
+  width: 50%;
+}
+.lg-7 {
+  width: 58.33333333%;
+}
 .main-header {
-  min-height: 700px;
-  background: url("../img/header-bg.png") no-repeat;
+  height: 100vh;
+  max-height: 860px;
+  background: url("../img/overlay-header.png") no-repeat;
   background-size: cover;
-  padding-left: 42px;
-  padding-top: 37px;
-  padding-right: 45px;
   box-sizing: border-box;
+  position: relative;
 }
 .main-header__title {
   margin: 0;
   text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -590px;
+  margin-top: -62px;
   color: #fff;
   font-size: 42px;
   line-height: 43px;
   font-weight: 400;
   text-align: center;
-  padding-top: 251px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+}
+@media (max-width: 1320px) {
+  .main-header__title {
+    max-width: 695px;
+    left: 50%;
+    margin-left: -340px;
+  }
+}
+@media (max-width: 780px) {
+  .main-header__title {
+    max-width: 460px;
+    margin-left: -215px;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 380px) {
+  .main-header__title {
+    font-size: 24px;
+    margin-left: -155px;
+    margin-top: -68px;
+    max-width: 340px;
+    left: 47%;
+  }
 }
 .header-social {
   font-size: 14px;
   line-height: 14px;
-  padding-top: 14px;
+  padding-top: 50px;
+  padding-right: 18px;
 }
 .header-social__link {
   display: inline-block;
@@ -500,4 +548,143 @@ button:focus {
   background: url("../img/insta-header.svg") no-repeat;
   width: 14px;
   height: 14px;
+}
+@media (max-width: 660px) {
+  .header-social {
+    float: none;
+    text-align: center;
+  }
+}
+.partners {
+  font-size: 0;
+  box-sizing: border-box;
+  background: #f7f8fa;
+  padding-top: 26px;
+  width: 100%;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+.partners__link {
+  width: 16%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.partners__link:last-child {
+  margin-right: 0;
+}
+@media (max-width: 780px) {
+  .partners {
+    padding-left: 0;
+  }
+  .partners__link {
+    width: 50%;
+    padding-bottom: 14px;
+  }
+  .partners__link:nth-last-child(1) {
+    padding-bottom: 0;
+  }
+  .partners__link:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+}
+.description {
+  padding-top: 16px;
+}
+.description__title {
+  font-size: 36px;
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.description__title-small {
+  margin: 0;
+  color: #4e7082;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.description__text {
+  color: #95a2b4;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.description__text:last-child {
+  margin-bottom: 0;
+}
+.content .description--left {
+  padding-left: 28px;
+}
+.description-image {
+  padding: 0;
+}
+.about-us {
+  padding-top: 88px;
+  position: relative;
+  padding-bottom: 102px;
+}
+.about-us:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #f7f8fa;
+  bottom: 0;
+  left: 0;
+}
+.content-title {
+  text-align: center;
+  font-weight: 200;
+  font-size: 28px;
+  padding-top: 119px;
+  padding-left: 29px;
+  box-sizing: border-box;
+  position: relative;
+}
+.content-title:before {
+  content: "";
+  position: absolute;
+  background: url(../img/secret-sauce-icon.svg) no-repeat;
+  width: 43px;
+  height: 38px;
+  top: 54px;
+  left: 50%;
+  margin-left: -9px;
+}
+.is_overlay {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#trailer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+#trailer > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1400px;
+  height: auto;
+  min-height: 700px;
+}
+.logo {
+  padding-left: 42px;
+  padding-top: 38px;
+}
+@media (max-width: 660px) {
+  .logo {
+    display: block;
+    text-align: center;
+    float: none;
+    padding-left: 0;
+  }
 }

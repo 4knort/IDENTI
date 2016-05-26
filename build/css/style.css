@@ -353,13 +353,40 @@ td,
 th {
   padding: 0;
 }
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("../fonts/montserrat-regular-webfont.eot");
+  src: url("../fonts/montserrat-regular-webfont.eot") format("embedded-opentype"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.ttf") format("truetype"), url("../fonts/montserrat-regular-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  src: url("../fonts/montserrat-bold-webfont.eot");
+  src: url("../fonts/montserrat-bold-webfont.eot") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype"), url("../fonts/montserrat-bold-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: url("../fonts/montserrat-semibold-webfont.eot");
+  src: url("../fonts/montserrat-semibold-webfont.eot") format("embedded-opentype"), url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff"), url("../fonts/montserrat-semibold-webfont.ttf") format("truetype"), url("../fonts/montserrat-semibold-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  src: url("../fonts/montserrat-light-webfont.eot");
+  src: url("../fonts/montserrat-light-webfont.eot") format("embedded-opentype"), url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype"), url("../fonts/montserrat-light-webfont.svg") format("svg");
+}
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 16px;
   line-height: 30px;
   margin: 0;
   padding: 0;
   background-color: #fff;
+}
+input {
+  font-family: "Montserrat";
 }
 a {
   text-decoration: none;
@@ -430,12 +457,13 @@ button:focus {
 .main-header__title {
   margin: 0;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   font-size: 42px;
   line-height: 43px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   padding-top: 251px;
+  letter-spacing: 1px;
 }
 .header-social {
   font-size: 14px;
@@ -445,25 +473,31 @@ button:focus {
 .header-social__link {
   display: inline-block;
   vertical-align: top;
-  margin-left: 12px;
-  color: #FFF;
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
-  width: 20px;
-  height: 20px;
+  letter-spacing: 1px;
+}
+.header-social__link:last-child {
+  margin-right: 0;
 }
 .header-social__link:first-child {
-  margin-left: 0;
-  width: auto;
-  height: auto;
+  margin-right: 34px;
 }
 .header-social__link--fb {
   background: url("../img/fb-header.svg") no-repeat;
-  margin-left: 40px;
+  width: 8px;
+  height: 16px;
 }
 .header-social__link--twit {
   background: url("../img/twit-header.svg") no-repeat;
+  width: 16px;
+  height: 13px;
 }
 .header-social__link--insta {
   background: url("../img/insta-header.svg") no-repeat;
+  width: 14px;
+  height: 14px;
 }

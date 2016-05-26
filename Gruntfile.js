@@ -27,7 +27,7 @@ module.exports = function(grunt){
     // grunt-watch
     watch: {
       style: {
-        files: ["source/less/**/*.less", "source/js/*.js"],
+        files: ["source/*.html", "source/less/**/*.less", "source/js/*.js"],
         tasks: ["includereplace", "less", "postcss", "cssmin", "concat", "uglify"],
         options: {
           spawn: false,
@@ -82,7 +82,7 @@ module.exports = function(grunt){
           expand: true,
           cwd: "source",
           src: [
-            "img/**",
+            "img/**", "fonts/**"
           ],
           dest: "build"
         }]

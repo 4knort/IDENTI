@@ -510,12 +510,14 @@ button:focus {
     top: 21px;
     height: 46px;
     width: 1200px;
-    left: 256px;
+    left: 50%;
+    margin-left: -855px;
   }
 }
 @media (min-width: 2228px) {
   .main-header__title-blue {
     left: 0;
+    margin-left: 0;
   }
 }
 @media (max-width: 1320px) {
@@ -533,14 +535,28 @@ button:focus {
     margin-bottom: 165px;
   }
   .main-header__title {
-    font-size: 24px;
+    font-size: 20px;
     margin-left: -155px;
     margin-top: 0;
     max-width: 340px;
     left: 45%;
   }
   .main-header__title-blue {
-    display: none;
+    width: 99%;
+    left: 0;
+    top: 15px;
+    height: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .main-header__title {
+    font-size: 18px;
+    left: 49%;
+  }
+  .main-header__title-blue {
+    left: 4px;
+    height: 10px;
+    width: 97%;
   }
 }
 .header-social {

@@ -46,7 +46,8 @@
         top: 21px;
         height: 46px;
         width: 1200px;
-        left: 256px;
+        left: 50%;
+        margin-left: -855px; 
       }
     }
   }
@@ -56,6 +57,7 @@
     &__title {
       &-blue {
         left: 0;
+        margin-left: 0;
       }
     }
   }
@@ -78,13 +80,30 @@
   .main-header {
     margin-bottom: 165px;
     &__title {
-     font-size: 24px;
+     font-size: 20px;
       margin-left: -155px;
       margin-top: 0;
       max-width: 340px;
       left: 45%;
       &-blue {
-        display: none;
+        width: 99%;
+        left: 0;
+        top: 15px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .main-header {
+    &__title {
+      font-size: 18px;
+      left: 49%; 
+      &-blue {
+        left: 4px;
+        height: 10px;
+        width: 97%;
       }
     }
   }

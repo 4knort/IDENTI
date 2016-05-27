@@ -467,8 +467,7 @@ button:focus {
   width: 58.33333333%;
 }
 .main-header {
-  height: 100vh;
-  max-height: 860px;
+  max-height: 100vh;
   background: url("../img/overlay-header.png") no-repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -489,6 +488,14 @@ button:focus {
   text-align: center;
   letter-spacing: 2px;
 }
+@media (min-width: 1950px) {
+  .main-header__title {
+    font-size: 80px;
+    line-height: 90px;
+    left: 50%;
+    margin-left: -1115px;
+  }
+}
 @media (max-width: 1320px) {
   .main-header__title {
     max-width: 695px;
@@ -503,13 +510,13 @@ button:focus {
     margin-top: -100px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .main-header__title {
     font-size: 24px;
     margin-left: -155px;
     margin-top: -68px;
     max-width: 340px;
-    left: 47%;
+    left: 45%;
   }
 }
 .header-social {
@@ -553,6 +560,16 @@ button:focus {
   .header-social {
     float: none;
     text-align: center;
+  }
+}
+@media (min-width: 1600px) {
+  .header-social {
+    padding-right: 40px;
+  }
+}
+@media (min-width: 1800px) {
+  .header-social {
+    padding-right: 60px;
   }
 }
 .partners {
@@ -672,9 +689,8 @@ button:focus {
   top: 0;
   left: 0;
   width: 100%;
-  min-width: 1400px;
+  min-width: 850px;
   height: auto;
-  min-height: 700px;
 }
 .logo {
   padding-left: 42px;
@@ -686,5 +702,15 @@ button:focus {
     text-align: center;
     float: none;
     padding-left: 0;
+  }
+}
+@media (min-width: 1600px) {
+  .logo {
+    padding-left: 70px;
+  }
+}
+@media (min-width: 1800px) {
+  .logo {
+    padding-left: 100px;
   }
 }

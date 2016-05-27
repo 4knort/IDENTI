@@ -384,6 +384,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
+  font-weight: normal;
 }
 input {
   font-family: "Montserrat";
@@ -487,6 +488,16 @@ button:focus {
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
+  z-index: 1;
+}
+.main-header__title-blue {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 650px;
+  height: 24px;
+  background-color: #1C93D5;
+  z-index: -1;
 }
 @media (min-width: 1950px) {
   .main-header__title {
@@ -495,6 +506,17 @@ button:focus {
     left: 50%;
     margin-left: -1115px;
   }
+  .main-header__title-blue {
+    top: 21px;
+    height: 46px;
+    width: 1200px;
+    left: 256px;
+  }
+}
+@media (min-width: 2228px) {
+  .main-header__title-blue {
+    left: 0;
+  }
 }
 @media (max-width: 1320px) {
   .main-header__title {
@@ -502,28 +524,30 @@ button:focus {
     left: 50%;
     margin-left: -340px;
   }
-}
-@media (max-width: 780px) {
-  .main-header__title {
-    max-width: 460px;
-    margin-left: -215px;
-    margin-top: -100px;
+  .main-header__title-blue {
+    left: 22px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 780px) {
+  .main-header {
+    margin-bottom: 165px;
+  }
   .main-header__title {
     font-size: 24px;
     margin-left: -155px;
-    margin-top: -68px;
+    margin-top: 0;
     max-width: 340px;
     left: 45%;
+  }
+  .main-header__title-blue {
+    display: none;
   }
 }
 .header-social {
   font-size: 14px;
   line-height: 14px;
   padding-top: 50px;
-  padding-right: 18px;
+  padding-right: 42px;
 }
 .header-social__link {
   display: inline-block;
@@ -556,7 +580,7 @@ button:focus {
   width: 14px;
   height: 14px;
 }
-@media (max-width: 660px) {
+@media (max-width: 780px) {
   .header-social {
     float: none;
     text-align: center;
@@ -564,12 +588,12 @@ button:focus {
 }
 @media (min-width: 1600px) {
   .header-social {
-    padding-right: 40px;
+    padding-right: 70px;
   }
 }
 @media (min-width: 1800px) {
   .header-social {
-    padding-right: 60px;
+    padding-right: 100px;
   }
 }
 .partners {
@@ -596,6 +620,7 @@ button:focus {
 @media (max-width: 780px) {
   .partners {
     padding-left: 0;
+    bottom: -165px;
   }
   .partners__link {
     width: 50%;
@@ -696,7 +721,7 @@ button:focus {
   padding-left: 42px;
   padding-top: 38px;
 }
-@media (max-width: 660px) {
+@media (max-width: 780px) {
   .logo {
     display: block;
     text-align: center;

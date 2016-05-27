@@ -652,20 +652,38 @@ button:focus {
 .description {
   padding-top: 16px;
 }
+.description--expertise {
+  padding-top: 110px;
+}
+.description--creativity {
+  padding-top: 120px;
+}
+.description--technology {
+  padding-top: 81px;
+}
+.description--data {
+  padding-top: 62px;
+}
 .description__title {
   font-size: 36px;
   font-weight: 200;
   margin: 0;
+  margin-bottom: 19px;
+}
+.description__title--about-us {
   margin-bottom: 48px;
 }
 .description__title-small {
   margin: 0;
   color: #4e7082;
   text-transform: uppercase;
-  margin-bottom: 3px;
+  margin-bottom: 14px;
   font-weight: normal;
   letter-spacing: 2px;
   font-size: 16px;
+}
+.description__title-small--about-us {
+  margin-bottom: 3px;
 }
 .description__text {
   color: #95a2b4;
@@ -678,6 +696,13 @@ button:focus {
 }
 .description-image {
   padding: 0;
+}
+.description-image--expertise {
+  padding-top: 43px;
+}
+.description-image--data {
+  padding-top: 18px;
+  width: 46%;
 }
 .about-us {
   padding-top: 88px;
@@ -755,4 +780,21 @@ button:focus {
   .logo {
     padding-left: 100px;
   }
+}
+.creativity {
+  background-color: #f7f8fa;
+  padding-top: 60px;
+  padding-bottom: 64px;
+}
+.expertise {
+  padding-bottom: 100px;
+}
+.technology {
+  padding-top: 103px;
+  padding-bottom: 106px;
+}
+.data {
+  background-color: #f7f8fa;
+  padding-top: 100px;
+  padding-bottom: 118px;
 }

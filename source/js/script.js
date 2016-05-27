@@ -14,9 +14,9 @@
         if( el.offsetHeight != elHeight ) {
    
           //Запомним текущую ширину
-          el.offsetHeight = elHeight;
+          elHeight = el.offsetHeight ;
    
-          header.setAttribute("style", "height:" + el.offsetHeight +('px'));
+          header.setAttribute("style", "height:" + elHeight +('px'));
         };
      },interval 
   );

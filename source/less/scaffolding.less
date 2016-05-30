@@ -55,8 +55,16 @@ body{
 
 input{
   font-family: "Montserrat";
+  outline: none;
+  padding: 0;
+  border: none;
+  font-weight: normal;
+  font-size: 16px;
 }
-
+textarea {
+  outline: none;
+  border: none;
+}
 a{
   text-decoration: none;
   border: none;
@@ -104,13 +112,18 @@ button:focus{
 .row{
   .row();
 }
+.lg-12{
+  .lg(12);
+}
 .lg-2{
   .lg(2);
 }
 .lg-3{
   .lg(4);
 }
-
+.lg-4{
+  .lg(4);
+}
 .lg-5{
   .lg(5);
 }
@@ -120,3 +133,12 @@ button:focus{
 .lg-7{
   .lg(7);
 }
+.lg-8{
+  .lg(8);
+}
+
+//place holder style
+::-webkit-input-placeholder {color:#426B95;}
+::-moz-placeholder          {color:#426B95;}/* Firefox 19+ */
+:-moz-placeholder           {color:#426B95;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#426B95;}

@@ -5,12 +5,13 @@
   <title>IDENTI</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header class="main-header">
     <div id="trailer" class="is_overlay">
-      <video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
+      <video poster="img/video-img.png" id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
         <source src="video/identi.mp4" type="video/mp4">
         <source src="video/identi.webm" type="video/webm">
       </video>
@@ -106,20 +107,35 @@
     <div class="contacts">
       <div class="container">
         <h2 class="contacts__title">Don’t be shy, talk to us</h2>
-        <form action="" class="form row lg-8">
-          <label for="" class="form-label"></label>
-          <input type="text" class="form-input lg-4 col">
-          <label for="" class="form-label"></label>
-          <input type="text" class="form-input lg-4 col">
-          <label for="" class="form-label"></label>
-          <textarea name="" id="" cols="30" rows="10" class="form__textarea lg-8"></textarea>
-          <label for="" class="form-label"></label>
-          <input type="text" class="form-input form-input--code lg-2 ">
-          <div class="form__code-image">
-            <img src="" alt="">
-            <a href="#" class="form__code-link"></a>
+        <form action="" class="form row lg-8" method="post">
+          <div class="form__inputs row">
+            <div class="form__input-wrap lg-6 col">
+              <label for="" class="form-label">Name</label>
+              <input type="text" class="form-input" placeholder="John">
+            </div>
+            <div class="form__input-wrap lg-6 col">
+              <label for="" class="form-label">Email</label>
+              <input type="text" class="form-input" placeholder="John@mail.com">
+            </div>
           </div>
-          <input type="submit" class="input-submit lg-3">
+          <div class="form__input-wrap form__input-wrap--textarea lg-12">
+            <label for="" class="form-label">How can we help you?</label>
+            <textarea name="" id="" cols="30" rows="6" class="form__textarea" placeholder="Type your text here..."></textarea>
+          </div>
+          <div class="form__inputs form__inputs--code  row lg-6">
+            <div class="form__input-wrap col lg-6">
+              <label for="" class="form-label">Code</label>
+              <input type="text" class="form-input form-input--code" placeholder="Enter code">
+            </div>                  
+            <div class="form__code-image col">
+              <img src="img/code-img.jpg" alt="">
+              <a href="#" class="form__code-link">Show a different image</a>
+            </div>
+          </div>
+          <div class="form__input-wrap form__input-wrap--submit col to-right">
+            <input type="submit" class="input-submit col lg-3 to-right" value="Send message">
+          </div>
+          
         </form>
       </div>
     </div>

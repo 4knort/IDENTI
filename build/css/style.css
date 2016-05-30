@@ -388,6 +388,15 @@ body {
 }
 input {
   font-family: "Montserrat";
+  outline: none;
+  padding: 0;
+  border: none;
+  font-weight: normal;
+  font-size: 16px;
+}
+textarea {
+  outline: none;
+  border: none;
 }
 a {
   text-decoration: none;
@@ -452,10 +461,16 @@ button:focus {
   display: block;
   clear: both;
 }
+.lg-12 {
+  width: 100%;
+}
 .lg-2 {
   width: 16.66666667%;
 }
 .lg-3 {
+  width: 33.33333333%;
+}
+.lg-4 {
   width: 33.33333333%;
 }
 .lg-5 {
@@ -466,6 +481,23 @@ button:focus {
 }
 .lg-7 {
   width: 58.33333333%;
+}
+.lg-8 {
+  width: 66.66666667%;
+}
+::-webkit-input-placeholder {
+  color: #426B95;
+}
+::-moz-placeholder {
+  color: #426B95;
+}
+/* Firefox 19+ */
+:-moz-placeholder {
+  color: #426B95;
+}
+/* Firefox 18- */
+:-ms-input-placeholder {
+  color: #426B95;
 }
 .main-header {
   max-height: 100vh;
@@ -797,4 +829,94 @@ button:focus {
   background-color: #f7f8fa;
   padding-top: 100px;
   padding-bottom: 118px;
+}
+.contacts {
+  background-color: #002A42;
+  padding-top: 78px;
+  padding-bottom: 50px;
+}
+.contacts__title {
+  font-size: 42px;
+  line-height: 43px;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+.form {
+  margin: 0 auto;
+  max-width: 770px;
+  padding: 0 30px;
+}
+.form__inputs {
+  padding: 0;
+  margin-bottom: 20px;
+}
+.form__inputs--code {
+  display: inline-block;
+  vertical-align: top;
+}
+.form__textarea {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #325366;
+  background-color: #002A42;
+  border-radius: 3px;
+  resize: none;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  max-height: 190px;
+}
+.form__textarea:focus {
+  background-color: #FFF;
+}
+.form__input-wrap--textarea {
+  margin-bottom: 19px;
+}
+.form__input-wrap--submit {
+  width: 37%;
+  padding-top: 31px;
+}
+.form__code-image {
+  padding-top: 31px;
+  width: 43%;
+}
+.form__code-link {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 11px;
+  margin-top: 10px;
+  text-align: right;
+  padding-left: 20px;
+  box-sizing: border-box;
+  color: #01A4FF;
+}
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid #325366;
+  background-color: #002A42;
+  border-radius: 3px;
+}
+.form-input:focus {
+  background-color: #FFF;
+}
+.form-label {
+  color: #FFF;
+  font-size: 15px;
+}
+.input-submit {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 0;
+  color: #FFF;
+  background-color: #01A4FF;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 3px;
 }

@@ -667,6 +667,61 @@ button:focus {
 .partners__img:last-child {
   margin-right: 0;
 }
+.partners__link {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+.partners__link--888 {
+  width: 60px;
+  height: 40px;
+  background: url("../img/partner1_1x.png") no-repeat;
+}
+.partners__link--888:hover {
+  background: url("../img/partner1_1x-hover.png") no-repeat;
+}
+.partners__link--lad {
+  width: 140px;
+  height: 23px;
+  background: url("../img/partner2_1x.png") no-repeat;
+}
+.partners__link--lad:hover {
+  background: url("../img/partner2_1x-hover.png") no-repeat;
+}
+.partners__link--ell {
+  width: 120px;
+  height: 27px;
+  background: url("../img/partner3_1x.png") no-repeat;
+}
+.partners__link--ell:hover {
+  background: url("../img/partner3_1x-hover.png") no-repeat;
+}
+.partners__link--leo {
+  width: 140px;
+  height: 34px;
+  background: url("../img/partner4_1x.png") no-repeat;
+}
+.partners__link--leo:hover {
+  width: 150px;
+  background: url("../img/partner4_1x-hover.png") no-repeat;
+}
+.partners__link--titan {
+  width: 70px;
+  height: 34px;
+  background: url("../img/partner5_1x.png") no-repeat;
+}
+.partners__link--titan:hover {
+  background: url("../img/partner5_1x-hover.png") no-repeat;
+}
+.partners__link--europa {
+  width: 55px;
+  height: 39px;
+  background: url("../img/partner6_1x.png") no-repeat;
+}
+.partners__link--europa:hover {
+  background: url("../img/partner6_1x-hover.png") no-repeat;
+}
 @media (max-width: 780px) {
   .partners {
     padding-left: 0;
@@ -1028,4 +1083,14 @@ button:focus {
   padding-right: 22px;
   padding-top: 5px;
   margin: 0;
+}
+.author__link {
+  background: url("../img/difiz_logo.png");
+  width: 72px;
+  height: 35px;
+  display: inline-block;
+  vertical-align: top;
+}
+.author__link:hover {
+  background: url("../img/difiz_logo-hover.png");
 }

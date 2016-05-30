@@ -12,30 +12,32 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: all .4s;
     &:last-child{
       margin-right: 0;
     }
     &:first-child{
       margin-right: 34px;
     }
-    &--fb{
-      background: url("../img/fb-header.svg") no-repeat;
-      width: 8px;
-      height: 16px;
+    &:hover {
+      color: @teal;
     }
-    &--twit{
-      background: url("../img/twit-header.svg") no-repeat;
-      width: 16px;
-      height: 13px;
+    & path {
+      fill: #fff;
+      transition: fill .4s ease;
     }
-    &--insta{
-      background: url("../img/insta-header.svg") no-repeat;
-      width: 14px;
-      height: 14px;
+    &--fb:hover path {
+      fill: @teal;
     }
+    &--twit:hover path {
+      fill: @teal;
+    }
+    &--insta:hover path {
+      fill: @teal;
+    }
+
   }
 }
-
 @media (max-width: 780px) {
   .header-social {
     float: none;

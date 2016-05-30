@@ -1,5 +1,6 @@
 .input-submit {
   width: 100%;
+  letter-spacing: 1px;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,4 +12,14 @@
   font-size: 14px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  &:hover {
+   background-color: #fff;
+   color: @teal;
+   transition: all .4s ease;
+  }
+  &:active {
+    background-color: #fff; 
+    color: @teal;
+    transition: all .4s ease
+  }
 }

@@ -606,6 +606,7 @@ button:focus {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+  transition: all .4s;
 }
 .header-social__link:last-child {
   margin-right: 0;
@@ -613,20 +614,21 @@ button:focus {
 .header-social__link:first-child {
   margin-right: 34px;
 }
-.header-social__link--fb {
-  background: url("../img/fb-header.svg") no-repeat;
-  width: 8px;
-  height: 16px;
+.header-social__link:hover {
+  color: #01A4FF;
 }
-.header-social__link--twit {
-  background: url("../img/twit-header.svg") no-repeat;
-  width: 16px;
-  height: 13px;
+.header-social__link path {
+  fill: #fff;
+  transition: fill .4s ease;
 }
-.header-social__link--insta {
-  background: url("../img/insta-header.svg") no-repeat;
-  width: 14px;
-  height: 14px;
+.header-social__link--fb:hover path {
+  fill: #01A4FF;
+}
+.header-social__link--twit:hover path {
+  fill: #01A4FF;
+}
+.header-social__link--insta:hover path {
+  fill: #01A4FF;
 }
 @media (max-width: 780px) {
   .header-social {
@@ -656,13 +658,13 @@ button:focus {
   bottom: -2px;
   left: 0;
 }
-.partners__link {
+.partners__img {
   width: 16%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
-.partners__link:last-child {
+.partners__img:last-child {
   margin-right: 0;
 }
 @media (max-width: 780px) {
@@ -670,14 +672,14 @@ button:focus {
     padding-left: 0;
     bottom: -165px;
   }
-  .partners__link {
+  .partners__img {
     width: 50%;
     padding-bottom: 14px;
   }
-  .partners__link:nth-last-child(1) {
+  .partners__img:nth-last-child(1) {
     padding-bottom: 0;
   }
-  .partners__link:nth-last-child(2) {
+  .partners__img:nth-last-child(2) {
     padding-bottom: 0;
   }
 }
@@ -792,8 +794,16 @@ button:focus {
   height: auto;
 }
 .logo {
-  padding-left: 42px;
-  padding-top: 38px;
+  display: block;
+}
+.logo--top {
+  margin-left: 42px;
+  margin-top: 38px;
+}
+.logo--footer {
+  float: left;
+  text-align: left;
+  margin-top: 14px;
 }
 @media (max-width: 780px) {
   .logo {
@@ -833,7 +843,7 @@ button:focus {
 .contacts {
   background-color: #002A42;
   padding-top: 78px;
-  padding-bottom: 50px;
+  padding-bottom: 99px;
 }
 .contacts__title {
   font-size: 42px;
@@ -843,6 +853,7 @@ button:focus {
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 78px;
 }
 .form {
   margin: 0 auto;
@@ -859,18 +870,36 @@ button:focus {
 }
 .form__textarea {
   display: block;
+  color: #FFF;
   width: 100%;
   padding: 0;
   border: 1px solid #325366;
   background-color: #002A42;
   border-radius: 3px;
   resize: none;
-  padding: 14px 16px;
+  padding: 10px 16px;
   box-sizing: border-box;
   max-height: 190px;
 }
+.form__textarea:hover {
+  border-color: #01A4FF;
+}
 .form__textarea:focus {
   background-color: #FFF;
+  text-shadow: 0px 0px 0px #000;
+  -webkit-text-fill-color: transparent;
+  color: #01A4FF;
+}
+.form__textarea:focus + .form__textarea-icon path {
+  stroke: #01A4FF;
+}
+.form__textarea-icon {
+  position: absolute;
+  bottom: 6px;
+  right: 13px;
+}
+.form__input-wrap {
+  position: relative;
 }
 .form__input-wrap--textarea {
   margin-bottom: 19px;
@@ -888,6 +917,7 @@ button:focus {
   display: inline-block;
   vertical-align: top;
   font-size: 11px;
+  line-height: 16px;
   margin-top: 10px;
   text-align: right;
   padding-left: 20px;
@@ -897,13 +927,40 @@ button:focus {
 .form-input {
   width: 100%;
   padding: 14px 16px;
+  position: relative;
   box-sizing: border-box;
   border: 1px solid #325366;
   background-color: #002A42;
   border-radius: 3px;
+  color: #FFF;
+}
+.form-input:hover {
+  border-color: #01A4FF;
 }
 .form-input:focus {
+  color: #01A4FF;
   background-color: #FFF;
+  border-color: transparent;
+  text-shadow: 0px 0px 0px #000;
+  -webkit-text-fill-color: transparent;
+}
+.form-input:focus + .form-input__icon path {
+  stroke: #01A4FF;
+}
+.form-input__icon {
+  position: absolute;
+}
+.form-input__icon--name {
+  top: 46px;
+  right: 34px;
+}
+.form-input__icon--email {
+  top: 44px;
+  right: 18px;
+}
+.form-input__icon--code {
+  top: 46px;
+  right: 35px;
 }
 .form-label {
   color: #FFF;
@@ -911,6 +968,7 @@ button:focus {
 }
 .input-submit {
   width: 100%;
+  letter-spacing: 1px;
   box-sizing: border-box;
   padding: 16px 0;
   color: #FFF;
@@ -919,4 +977,55 @@ button:focus {
   font-weight: bold;
   font-size: 14px;
   border-radius: 3px;
+}
+.input-submit:hover {
+  background-color: #fff;
+  color: #01A4FF;
+  transition: all .4s ease;
+}
+.input-submit:active {
+  background-color: #fff;
+  color: #01A4FF;
+  transition: all 0.4s ease;
+}
+.main-footer {
+  padding-top: 31px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.footer-social {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-social__text {
+  color: #95A2B4;
+  font-size: 13px;
+  font-weight: 200;
+}
+.footer-social__link {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 16px;
+}
+.footer-social__link path {
+  fill: #006aa5;
+  transition: fill .4s ease;
+}
+.footer-social__link:hover path {
+  fill: #01A4FF;
+}
+.author {
+  text-align: right;
+  font-weight: 200;
+  color: #333C4E;
+  font-size: 14px;
+  padding-top: 16px;
+}
+.author__text {
+  display: inline-block;
+  vertical-align: top;
+  color: #333C4E;
+  padding-right: 22px;
+  padding-top: 5px;
+  margin: 0;
 }

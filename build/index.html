@@ -182,7 +182,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix row">
+      <div class="containser clearfix row">
       <div class="logo-wrap col lg-4">
         <a href="#" class="logo logo--footer"><img src="img/logo-bottom.png" alt=""></a>
       </div>
@@ -220,14 +220,12 @@
       }, 50)
     }
       document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() {
           var content = document.querySelector('.loaded-content');
           var loader = document.querySelector('.spinner')
           var spinner = document.querySelector('#page-preloader')
           loader.style.display = "none";
           spinner.style.display = "none";
           fadeIn(content);
-        }, 3000)
         
             
       })

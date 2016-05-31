@@ -12,6 +12,15 @@
   color: #fff;
   &:hover{
     border-color: @teal;
+    transition: border-color 0.4s ease;
+  }
+  & path {
+    fill: #416992;
+    transition: stroke 0.4s ease;
+  }
+  &:hover + .form-input__icon path{
+    stroke: @teal;
+    transition: stroke 0.4s ease;
   }
   &:focus{
     color: @teal;
@@ -20,6 +29,7 @@
     text-shadow: 0 0 0 #000;
     -webkit-text-fill-color: transparent;
   }
+
   &:focus + .form-input__icon path{
     stroke: @teal;
   }

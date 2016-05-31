@@ -606,7 +606,6 @@ button:focus {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: all 0.4s;
 }
 .header-social__link:last-child {
   margin-right: 0;
@@ -850,9 +849,9 @@ button:focus {
 }
 .logo {
   display: block;
+  margin-left: 42px;
 }
 .logo--top {
-  margin-left: 42px;
   margin-top: 38px;
 }
 .logo--footer {
@@ -865,7 +864,7 @@ button:focus {
     display: block;
     text-align: center;
     float: none;
-    padding-left: 0;
+    margin-left: 0;
   }
 }
 @media (min-width: 1600px) {
@@ -936,8 +935,13 @@ button:focus {
   box-sizing: border-box;
   max-height: 190px;
 }
+.form__textarea path {
+  fill: #416992;
+  transition: stroke 0.4s ease;
+}
 .form__textarea:hover {
   border-color: #01a4ff;
+  transition: border-color 0.4s ease;
 }
 .form__textarea:focus {
   background-color: #fff;
@@ -945,8 +949,9 @@ button:focus {
   -webkit-text-fill-color: transparent;
   color: #01a4ff;
 }
-.form__textarea:focus + .form__textarea-icon path {
+.form__textarea:hover + .form__textarea-icon path {
   stroke: #01a4ff;
+  transition: stroke 0.4s ease;
 }
 .form__textarea-icon {
   position: absolute;
@@ -1014,6 +1019,15 @@ button:focus {
 }
 .form-input:hover {
   border-color: #01a4ff;
+  transition: border-color 0.4s ease;
+}
+.form-input path {
+  fill: #416992;
+  transition: stroke 0.4s ease;
+}
+.form-input:hover + .form-input__icon path {
+  stroke: #01a4ff;
+  transition: stroke 0.4s ease;
 }
 .form-input:focus {
   color: #01a4ff;
@@ -1116,4 +1130,17 @@ button:focus {
 }
 .author__link:hover {
   background: url("../img/difiz_logo-hover.png");
+}
+.main-footer .author {
+  padding-right: 42px;
+}
+@media (min-width: 1600px) {
+  .main-footer .author {
+    padding-right: 70px;
+  }
+}
+@media (min-width: 1800px) {
+  .main-footer .author {
+    padding-right: 100px;
+  }
 }

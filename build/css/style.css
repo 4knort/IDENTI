@@ -430,6 +430,7 @@ button:focus {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 .col {
   float: left;
@@ -562,7 +563,7 @@ button:focus {
     left: 22px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
   .main-header {
     margin-bottom: 165px;
   }
@@ -721,7 +722,7 @@ button:focus {
   height: 39px;
   background: url("../img/partner6_1x-hover.png") no-repeat;
 }
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
   .partners {
     padding-left: 0;
     bottom: -165px;
@@ -976,9 +977,6 @@ button:focus {
   border-bottom: 1px dashed #426895;
   padding-bottom: 3px;
 }
-.form__code-underline:hover {
-  border-color: #01a4ff;
-}
 .form__code-link {
   width: 100%;
   display: inline-block;
@@ -994,18 +992,24 @@ button:focus {
 }
 .form__code-link:hover {
   color: #01a4ff;
+  transition: color 0.4s ease;
 }
-.form__code-link:before {
-  content: "";
+.form__code-link:hover path {
+  fill: #01a4ff;
+  transiiton: fill 0.4s ease;
+}
+.form__code-link:hover .form__code-underline {
+  border-color: #01a4ff;
+  transition: border-color 0.4s ease;
+}
+.form__code-link-icon {
   position: absolute;
   top: 0;
   left: 0;
-  width: 15px;
-  height: 15px;
-  background: url("../img/refresh-icon.svg") no-repeat;
 }
-.form__code-link:hover:before {
-  background: url("../img/refresh-icon-hover.svg") no-repeat;
+.form__code-link-icon path {
+  fill: #426895;
+  transition: fill 0.4s ease;
 }
 .form-input {
   width: 100%;

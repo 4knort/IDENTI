@@ -12,7 +12,7 @@
         elHeight = el.offsetHeight;
    
   timer = setInterval(
-     function(){
+     function(event){
         if( el.offsetHeight != elHeight ) {
    
           //Запомним текущую ширину
@@ -29,13 +29,13 @@
   var placeholder;
 
   for (var i = 0; i < inputs.length; i++) {
-    inputs[i].addEventListener('focus', function() { 
+    inputs[i].addEventListener('focus', function(event) { 
       var el = event.target;
       placeholder = el.getAttribute('placeholder') 
       el.setAttribute('placeholder', '');
     });
 
-    inputs[i].addEventListener('blur', function() {
+    inputs[i].addEventListener('blur', function(event) {
       var el = event.target;
       el.setAttribute('placeholder', placeholder)
     })
@@ -44,11 +44,11 @@
 
   }
   for (var i = 0; i < textareas.length; i++) {
-    textareas[i].addEventListener('focus', function() { 
+    textareas[i].addEventListener('focus', function(event) { 
       var el = event.target; 
       el.setAttribute('placeholder', '');
     })
-    textareas[i].addEventListener('blur', function() {
+    textareas[i].addEventListener('blur', function(event) {
       var el = event.target;
       el.setAttribute('placeholder', placeholder)
     })

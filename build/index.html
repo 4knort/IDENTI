@@ -171,7 +171,12 @@
               </div>                  
               <div class="form__code-image col">
                 <img src="img/code-img.jpg" alt="">
-                <a href="#" class="form__code-link"><span class="form__code-underline ">Show a different image</span></a>
+                <a href="#" class="form__code-link"><span class="form__code-underline ">Show a different image</span>
+                  <span class="form__code-link-icon">
+                  <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><title>refresh icon</title><g fill="#426B95" fill-rule="evenodd"><path d="M14 4.917h-3.25c-.25 0-.417-.167-.417-.417 0-.25.167-.417.417-.417h2.833V1.25c0-.25.167-.417.417-.417.25 0 .417.167.417.417V4.5c0 .083-.084.25-.084.333-.083 0-.25.084-.333.084zM.5 13.333c-.25 0-.417-.166-.417-.416v-3.25c0-.25.167-.417.417-.417h3.25c.25 0 .417.167.417.417 0 .25-.167.416-.417.416H.917v2.834c0 .25-.167.416-.417.416z"/><path d="M13.833 3.833C12.583 1.417 10.083 0 7.417 0 3.5 0 .333 3.083.167 6.917V7c0 .167.166.333.333.417.25 0 .417-.084.5-.334V7C1.167 3.583 4 .833 7.5.833c2.417 0 4.583 1.334 5.75 3.417.083.167.333.25.583.167.084-.084.167-.417 0-.584zM14.167 7c-.417 0-.417.417-.417.417-.167 3.416-3 6.166-6.5 6.166-2.417 0-4.583-1.333-5.75-3.416C1.417 10 1.167 9.917.917 10c-.167.083-.25.333-.167.583C2 13 4.5 14.417 7.167 14.417c4 0 7.25-3.084 7.416-7 0-.25-.166-.417-.416-.417z"/></g></svg>
+                </span>
+                </a>
+                
               </div>
             </div>
             <div class="form__input-wrap form__input-wrap--submit col to-right">
@@ -219,13 +224,13 @@
         }
       }, 50)
     }
-      document.addEventListener('DOMContentLoaded', function() {
+      window.addEventListener('load', function() {
           var content = document.querySelector('.loaded-content');
           var loader = document.querySelector('.spinner')
           var spinner = document.querySelector('#page-preloader')
           loader.style.display = "none";
-          spinner.style.display = "none";
-          fadeIn(content);
+          spinner.style.display = "none"; 
+          // fadeIn(content);
         
             
       })

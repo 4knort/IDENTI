@@ -57,18 +57,41 @@
     padding-top: 31px;
     width: 43%;
   }
+  &__code-underline {
+    border-bottom: 1px dashed #426895;
+    padding-bottom: 3px;
+    &:hover {
+      border-color: @teal;
+    }
+  }
   &__code-link{
     width: 100%;
     display: inline-block;
     vertical-align: top;
     font-size: 11px;
-    line-height: 16px;
+    line-height: 18px;
     margin-top: 10px;
     text-align: right;
     padding-left: 20px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    color: @teal;
+    color: #426B95;
+    position: relative;
+    &:hover {
+      color: @teal;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background: url("../img/refresh-icon.svg") no-repeat;
+    }
+    &:hover:before {
+      background: url("../img/refresh-icon-hover.svg") no-repeat;
+    }
   }
 }

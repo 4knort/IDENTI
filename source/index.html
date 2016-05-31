@@ -4,11 +4,34 @@
   <meta charset="UTF-8">
   <title>IDENTI</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <!-- loader styled -->
+   <style>
+    #page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 100500;
+    }
+
+    #page-preloader .spinner {
+        width: 106px;
+        height: 106px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: url('../../../../default.gif') no-repeat 50% 50%;
+        margin: -16px 0 0 -16px;
+    }
+  </style>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+   <div id="page-preloader"><span class="spinner"></span></div>
   <header class="main-header">
     <div id="trailer" class="is_overlay">
       <video poster="img/video-img.png" id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
@@ -147,7 +170,7 @@
             </div>                  
             <div class="form__code-image col">
               <img src="img/code-img.jpg" alt="">
-              <a href="#" class="form__code-link">Show a different image</a>
+              <a href="#" class="form__code-link"><span class="form__code-underline ">Show a different image</span></a>
             </div>
           </div>
           <div class="form__input-wrap form__input-wrap--submit col to-right">

@@ -616,6 +616,7 @@ button:focus {
 }
 .header-social__link:hover {
   color: #01a4ff;
+  transition: color 0.4s ease;
 }
 .header-social__link path {
   fill: #fff;

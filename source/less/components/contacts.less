@@ -13,3 +13,24 @@
     margin-bottom: 78px;
   }
 }
+
+@media (max-width: @mobile) {
+  .contacts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__title {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 30px;  
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .contacts {
+    &__title {
+      max-width: 370px;
+      margin: 0 auto;    
+    }
+  }
+}

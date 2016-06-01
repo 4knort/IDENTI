@@ -75,16 +75,21 @@
     }
   }
 }
-
-@media (max-width: 1000px){
-  .main-header{
+@media(max-width: @mobile) {
+  .main-header {
     margin-bottom: 165px;
+  }
+}
+
+@media (max-width: 780px){
+  .main-header{
+    padding-top: 30px;
     &__title{
       font-size: 20px;
       margin-left: -155px;
       margin-top: 0;
       max-width: 340px;
-      left: 45%;
+      left: 48%;
       &-blue{
         width: 99%;
         left: 0;
@@ -94,7 +99,13 @@
     }
   }
 }
-
+@media (max-width: 500px) {
+  .main-header {
+    &__title {
+      left: 45%;
+    }
+  }
+}
 @media (max-width: 320px){
   .main-header{
     &__title{

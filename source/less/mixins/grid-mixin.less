@@ -18,12 +18,12 @@
 }
 
 .row(){
-  @media(max-width: 780px){
+  @media(max-width: @mobile){
     .col:first-child{
-      padding: 0;
+      padding-right: 0;
     }
     .col:last-child{
-      padding: 0;
+      padding-left: 0;
     }
   }
   &:after{
@@ -60,9 +60,9 @@
 // }
 
 
-// // mobile
-// .sm(@size) {
-//   @media(max-width: 780px) { 
-//     width: 100% / (12 / @size);
-//   }
-// }
+// mobile
+.sm(@size) {
+  @media(max-width: @mobile) { 
+    width: 100% / (12 / @size);
+  }
+}

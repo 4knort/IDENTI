@@ -104,3 +104,43 @@
     }
   }
 }
+
+@media (max-width: @mobile) {
+  .form {
+    padding: 0;
+    &__code {
+      &-image {
+        float: right;
+        text-align: right;
+        padding-top: 32px;
+        max-width: 300px;
+      }
+      &-link {
+        width: auto;
+        margin-top: 13px; 
+      }
+    }
+    &__input-wrap {
+      &--submit {
+        float: left;
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    &__code {
+      &-image {
+        float: left;
+        width: 100%;
+        text-align: left;
+        max-width: 300px;
+      }
+    }
+    &__input-wrap {
+      width: 100%;
+    }
+  }
+}

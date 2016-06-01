@@ -19,7 +19,7 @@
     margin-bottom: 19px;
   }
   &__title--about-us{
-    margin-bottom: 48px;
+    // margin-bottom: 48px;
   }
   &__title-small{
     margin: 0;
@@ -43,6 +43,29 @@
     }
   }
 }
-// .content .description--left{
-//   padding-left: 28px;
-// }
+
+@media (max-width: @mobile) {
+  .description {
+    max-width: 450px;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    &__title {
+      // font-size: 30px;
+    }
+    &__title-small {
+      // font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .description {
+    &__title-small {
+      width: 300px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -46,6 +46,7 @@
   for (var i = 0; i < textareas.length; i++) {
     textareas[i].addEventListener('focus', function(event) { 
       var el = event.target; 
+      placeholder = el.getAttribute('placeholder') 
       el.setAttribute('placeholder', '');
     })
     textareas[i].addEventListener('blur', function(event) {

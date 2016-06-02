@@ -32,7 +32,7 @@
 </head>
 <body>
    <div id="page-preloader"><span class="spinner"></span></div>
-   <div class="loaded-content" style="opacity:1">
+   <div class="loaded-content" style="opacity:0">
      <header class="main-header">
       <div id="trailer" class="is_overlay">
         <video poster="img/video-img.png" id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
@@ -148,7 +148,7 @@
               </div>
               <div class="form__input-wrap lg-6 sm-12 col">
                 <label for="" class="form-label">Email</label>
-                <input type="text" class="form-input form-input--mail" placeholder="John@mail.com">
+                <input type="email" class="form-input form-input--mail" placeholder="John@mail.com">
                 <span class="form-input__icon form-input__icon--email">
                   <svg width="23" height="16" viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg"><title>2</title><g stroke-width="2" stroke="#416992" fill="none" fill-rule="evenodd"><path d="M1.4 1h20.1v13.3H1.4z"/><path d="M21.5 1L11.4 7.7 1.4 1"/></g></svg>
                 </span>
@@ -230,11 +230,11 @@
           var spinner = document.querySelector('#page-preloader')
           loader.style.display = "none";
           spinner.style.display = "none"; 
-          // fadeIn(content);
+          fadeIn(content);
         
             
       })
   </script>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

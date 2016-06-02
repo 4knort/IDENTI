@@ -97,7 +97,7 @@ module.exports = function(grunt){
     // склеивание js
     concat: {
       dist: {
-        src: ["source/js/script.js"],
+        src: ["source/js/script.js", "source/js/parallax.js"],
         dest: "build/js/script.js"
       }
     },

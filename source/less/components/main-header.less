@@ -12,6 +12,9 @@
     margin: 0;
     text-transform: uppercase;
     position: absolute;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateY(20px); 
     top: 50%;
     left: 50%;
     margin-left: -590px;
@@ -23,13 +26,19 @@
     text-align: center;
     letter-spacing: 2px;
     z-index: 1;
+    overflow: hidden;
     &-blue{
+      overflow: hidden;
       position: absolute;
+      // opacity: 0;
+      transition: all 1.25s ease;
+      transform: translateX(-700px);
       top: 9px;
       left: 0;
       width: 650px;
       height: 24px;
       background-color: #1c93d5;
+      background-position: -200px;
       z-index: -1;
     }
   }
@@ -41,13 +50,16 @@
       font-size: 80px;
       line-height: 90px;
       left: 50%;
-      margin-left: -1115px;
+      // margin-left: -1115px;
+      margin-left: -660px;
+      width: 1320px;
       &-blue{
         top: 21px;
         height: 46px;
         width: 1200px;
         left: 50%;
-        margin-left: -855px;
+        // margin-left: -855px;
+        margin-left: -600px;
       }
     }
   }
@@ -55,6 +67,8 @@
 @media (min-width: 2228px){
   .main-header{
     &__title{
+      width: auto;
+      margin-left: -1115px;
       &-blue{
         left: 0;
         margin-left: 0;

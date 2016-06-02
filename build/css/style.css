@@ -521,6 +521,9 @@ button:focus {
   margin: 0;
   text-transform: uppercase;
   position: absolute;
+  opacity: 0;
+  transition: all 0.4s ease;
+  transform: translateY(20px);
   top: 50%;
   left: 50%;
   margin-left: -590px;
@@ -532,14 +535,19 @@ button:focus {
   text-align: center;
   letter-spacing: 2px;
   z-index: 1;
+  overflow: hidden;
 }
 .main-header__title-blue {
+  overflow: hidden;
   position: absolute;
+  transition: all 1.25s ease;
+  transform: translateX(-700px);
   top: 9px;
   left: 0;
   width: 650px;
   height: 24px;
   background-color: #1c93d5;
+  background-position: -200px;
   z-index: -1;
 }
 @media (min-width: 1950px) {
@@ -547,17 +555,22 @@ button:focus {
     font-size: 80px;
     line-height: 90px;
     left: 50%;
-    margin-left: -1115px;
+    margin-left: -660px;
+    width: 1320px;
   }
   .main-header__title-blue {
     top: 21px;
     height: 46px;
     width: 1200px;
     left: 50%;
-    margin-left: -855px;
+    margin-left: -600px;
   }
 }
 @media (min-width: 2228px) {
+  .main-header__title {
+    width: auto;
+    margin-left: -1115px;
+  }
   .main-header__title-blue {
     left: 0;
     margin-left: 0;
@@ -617,6 +630,9 @@ button:focus {
   line-height: 14px;
   padding-top: 50px;
   padding-right: 42px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  transform: translateX(20px);
 }
 .header-social__link {
   display: inline-block;
@@ -930,13 +946,16 @@ button:focus {
 }
 .logo--top {
   margin-top: 38px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  transform: translateX(-20px);
 }
 .logo--footer {
   float: left;
   text-align: left;
   margin-top: 14px;
 }
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
   .logo {
     display: block;
     text-align: center;

@@ -9,13 +9,29 @@
   }
 }
 
-@media (max-width: @mobile) {
-  .description-image {
+@media (max-width: @mobile){
+  .description-image{
     text-align: center;
     float: none;
+    margin: 0 auto;
     margin-bottom: 30px;
-    &--data {
+    max-width: 500px;
+    &--data{
       width: 100%;
+    }
+    &--expertise {
+      padding-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 550px){
+  .description-image{
+    margin-bottom: 30px;
+    &--creativity{
+      width: 65%;
+      margin: 0 auto;
+      margin-bottom: 25px;
     }
   }
 }

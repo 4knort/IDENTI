@@ -832,10 +832,25 @@ button:focus {
   .description-image {
     text-align: center;
     float: none;
+    margin: 0 auto;
     margin-bottom: 30px;
+    max-width: 500px;
   }
   .description-image--data {
     width: 100%;
+  }
+  .description-image--expertise {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 550px) {
+  .description-image {
+    margin-bottom: 30px;
+  }
+  .description-image--creativity {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 25px;
   }
 }
 .about-us {
@@ -854,8 +869,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .about-us {
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .content-title {
@@ -879,6 +894,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .content-title {
+    margin: 0;
+    margin-top: 40px;
     padding-top: 69px;
   }
   .content-title:before {
@@ -947,8 +964,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .creativity {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .expertise {
@@ -957,7 +974,7 @@ button:focus {
 @media (max-width: 1000px) {
   .expertise {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 }
 .technology {
@@ -966,8 +983,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .technology {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .data {
@@ -977,8 +994,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .data {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .contacts {
@@ -998,8 +1015,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .contacts {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .contacts__title {
     font-size: 32px;
@@ -1011,12 +1028,13 @@ button:focus {
   .contacts__title {
     max-width: 370px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 .form {
   margin: 0 auto;
   max-width: 770px;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 .form__inputs {
   padding: 0;
@@ -1066,7 +1084,7 @@ button:focus {
   position: relative;
 }
 .form__input-wrap--textarea {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .form__input-wrap--submit {
   width: 37%;
@@ -1090,7 +1108,7 @@ button:focus {
   text-align: right;
   padding-left: 20px;
   box-sizing: border-box;
-  color: #426B95;
+  color: #426b95;
   position: relative;
 }
 .form__code-link:hover {
@@ -1117,12 +1135,18 @@ button:focus {
 @media (max-width: 1000px) {
   .form {
     padding: 0;
+    max-width: 500px;
+  }
+  .form__inputs {
+    margin-bottom: 0;
   }
   .form__code-image {
     float: right;
     text-align: right;
-    padding-top: 32px;
+    padding-top: 0px;
     max-width: 300px;
+    padding-top: 31px;
+    margin-bottom: 25px;
   }
   .form__code-link {
     width: auto;
@@ -1139,6 +1163,7 @@ button:focus {
     width: 100%;
     text-align: left;
     max-width: 300px;
+    padding-top: 0;
   }
   .form__input-wrap {
     width: 100%;
@@ -1192,6 +1217,9 @@ button:focus {
   right: 35px;
 }
 @media (max-width: 1000px) {
+  .form-input {
+    margin-bottom: 20px;
+  }
   .form-input__icon--name {
     right: 21px;
   }
@@ -1232,7 +1260,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .main-footer {
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 .footer-social {

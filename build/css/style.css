@@ -589,12 +589,8 @@ button:focus {
 }
 @media (max-width: 1000px) {
   .main-header {
-    margin-bottom: 165px;
-  }
-}
-@media (max-width: 780px) {
-  .main-header {
     padding-top: 30px;
+    margin-bottom: 165px;
   }
   .main-header__title {
     font-size: 20px;
@@ -668,7 +664,7 @@ button:focus {
 .header-social__link--insta:hover path {
   fill: #01a4ff;
 }
-@media (max-width: 780px) {
+@media (max-width: 1000px) {
   .header-social {
     float: none;
     text-align: center;

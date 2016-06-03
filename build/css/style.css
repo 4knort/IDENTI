@@ -522,7 +522,7 @@ button:focus {
   text-transform: uppercase;
   position: absolute;
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.150s ease;
   transform: translateY(20px);
   top: 50%;
   left: 50%;
@@ -540,7 +540,7 @@ button:focus {
 .main-header__title-blue {
   overflow: hidden;
   position: absolute;
-  transition: all 1.25s ease;
+  transition: all 1s ease;
   transform: translateX(-700px);
   top: 9px;
   left: 0;
@@ -598,6 +598,8 @@ button:focus {
     margin-top: 0;
     max-width: 340px;
     left: 48%;
+    transition: all 0.2s ease;
+    transform: translate(0, -20px);
   }
   .main-header__title-blue {
     width: 99%;
@@ -628,7 +630,7 @@ button:focus {
   padding-top: 50px;
   padding-right: 42px;
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.150s ease;
   transform: translateX(20px);
 }
 .header-social__link {
@@ -669,6 +671,8 @@ button:focus {
     float: none;
     text-align: center;
     padding-right: 0;
+    transition: all 0.2s ease;
+    transform: translate(0, -20px);
   }
 }
 @media (min-width: 1600px) {
@@ -775,6 +779,8 @@ button:focus {
 }
 .description {
   padding-top: 16px;
+  transition: all 0.2s ease;
+  transform: translate(-20px, -20px);
 }
 .description--expertise {
   padding-top: 110px;
@@ -833,6 +839,8 @@ button:focus {
 }
 .description-image {
   padding: 0;
+  transition: all 0.2s ease;
+  transform: translate(-20px, -20px);
 }
 .description-image--expertise {
   padding-top: 43px;
@@ -944,7 +952,7 @@ button:focus {
 .logo--top {
   margin-top: 38px;
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.150s ease;
   transform: translateX(-20px);
 }
 .logo--footer {
@@ -961,6 +969,8 @@ button:focus {
   }
   .logo--top {
     margin-top: 0;
+    transition: all 0.2s ease;
+    transform: translate(0, -20px);
   }
 }
 @media (min-width: 1600px) {

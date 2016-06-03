@@ -12,6 +12,8 @@
   font-size: 14px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  float: none;
+
   &:hover{
     background-color: #fff;
     color: @teal;
@@ -21,5 +23,29 @@
     background-color: #fff;
     color: @teal;
     transition: all 0.4s ease;
+  }
+  &__success {
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 18px;
+    color: #1BC2A6;
+    display: none; 
+  }
+}
+
+
+@media(max-width: @mobile) {
+  .input-submit {
+    &__success {
+      font-size: 14px;   
+    }
+  }
+}
+
+@media(max-width: 550px) {
+  .input-submit {
+    &__success {
+      font-size: 15px; 
+    }
   }
 }

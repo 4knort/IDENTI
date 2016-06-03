@@ -82,7 +82,7 @@ module.exports = function(grunt){
           expand: true,
           cwd: "source",
           src: [
-            "img/**", "fonts/**", "video/**"
+            "img/**", "fonts/**", "video/**",
           ],
           dest: "build"
         }]
@@ -97,7 +97,7 @@ module.exports = function(grunt){
     // склеивание js
     concat: {
       dist: {
-        src: ["source/js/script.js", "source/js/parallax.js"],
+        src: ["source/js/script.js", "source/js/parallax.js", "source/js/ajax.js"],
         dest: "build/js/script.js"
       }
     },

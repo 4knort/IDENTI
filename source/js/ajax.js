@@ -13,7 +13,7 @@ form.addEventListener('submit', function(event) {
   xhr.addEventListener("readystatechange", function(){
       if(xhr.readyState == 4){
         inputSubmit.style.backgroundColor = '#1BC2A6';  
-        inputSubmit.textContent = 'Send another message';  
+        inputSubmit.setAttribute('value', 'Send another message');
         submitSuccess.classList.add('show'); 
       }
     }); 

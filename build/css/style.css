@@ -782,8 +782,6 @@ button:focus {
 }
 .description {
   padding-top: 16px;
-  transition: all 0.2s ease;
-  transform: translate(-20px, -20px);
 }
 .description--expertise {
   padding-top: 110px;
@@ -842,8 +840,6 @@ button:focus {
 }
 .description-image {
   padding: 0;
-  transition: all 0.2s ease;
-  transform: translate(-20px, -20px);
 }
 .description-image--expertise {
   padding-top: 43px;

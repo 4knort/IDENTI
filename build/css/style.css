@@ -386,6 +386,26 @@ body {
   min-width: 320px;
   font-weight: normal;
 }
+p::-moz-selection,
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection {
+  background-color: #1c93d5;
+  color: #FFF;
+}
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background-color: #1c93d5;
+  color: #FFF;
+}
 input {
   font-family: "Montserrat";
   outline: none;

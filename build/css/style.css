@@ -1288,7 +1288,7 @@ button:focus {
   font-size: 15px;
   margin-top: 8px;
   line-height: 18px;
-  color: #1BC2A6;
+  color: #1bc2a6;
   display: none;
 }
 @media (max-width: 1000px) {

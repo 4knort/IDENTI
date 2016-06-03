@@ -45,13 +45,13 @@
         <div class="header-social to-right">
           <a href="#" class="header-social__link">Contact us</a>
           <a href="#" class="header-social__link header-social__link--fb">
-            <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M4.934 5.108V3.47c0-.614.416-.758.71-.758H7.44V.01L4.965 0C2.215 0 1.59 2.016 1.59 3.306v1.802H0v2.785h1.59v7.882h3.344V7.893H7.19l.293-2.785h-2.55z" fill="#FFF" fill-rule="evenodd"/></svg>
+            @@include("img/svg-icons/fb-header.svg")
           </a>
-          <a href="#" class="header-social__link header-social__link--twit">
-            <svg width="16" height="13" viewBox="0 0 16 13" xmlns="http://www.w3.org/2000/svg"><title>path5_1_</title><path d="M15.625 1.503c-.575.255-1.192.427-1.84.505.66-.397 1.17-1.025 1.408-1.773-.62.367-1.305.633-2.035.777C12.573.39 11.74 0 10.818 0c-1.77 0-3.206 1.435-3.206 3.206 0 .25.028.495.083.73C5.03 3.802 2.67 2.526 1.088.586.812 1.06.654 1.612.654 2.2c0 1.113.566 2.094 1.426 2.67-.525-.018-1.02-.162-1.452-.402v.04c0 1.553 1.105 2.85 2.57 3.144-.268.072-.55.112-.843.112-.207 0-.408-.02-.603-.058.408 1.273 1.592 2.2 2.994 2.226-1.097.86-2.48 1.373-3.98 1.373-.26 0-.515-.015-.766-.045 1.42.91 3.104 1.44 4.914 1.44 5.896 0 9.12-4.884 9.12-9.12 0-.14-.002-.278-.008-.415.626-.453 1.17-1.017 1.6-1.66z" fill="#FFF" fill-rule="evenodd"/></svg>
+          <a href="#" class="header-social__link header-social__link--twit">           
+            @@include("img/svg-icons/twit-header.svg")
           </a>
-          <a href="#" class="header-social__link header-social__link--insta">
-            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M11.294 0H2.706C1.214 0 0 1.19 0 2.652v8.422c0 1.462 1.214 2.65 2.706 2.65h8.59c1.49 0 2.704-1.188 2.704-2.65V2.65C14 1.19 12.786 0 11.294 0zm.776 1.582h.31V3.906l-2.365.007-.008-2.326 2.063-.006zM5.002 5.454C5.45 4.846 6.178 4.447 7 4.447c.822 0 1.55.4 1.998 1.007.29.397.466.882.466 1.408 0 1.332-1.106 2.416-2.464 2.416-1.36 0-2.464-1.084-2.464-2.416 0-.526.174-1.01.466-1.408zm7.634 5.62c0 .724-.602 1.314-1.342 1.314H2.706c-.74 0-1.342-.59-1.342-1.315v-5.62h2.09c-.18.436-.282.91-.282 1.41 0 2.068 1.717 3.753 3.828 3.753 2.11 0 3.828-1.685 3.828-3.754 0-.498-.102-.973-.283-1.408h2.09v5.62z" fill="#FFF" fill-rule="evenodd"/></svg>
+          <a href="#" class="header-social__link header-social__link--insta">          
+            @@include("img/svg-icons/insta-header.svg") 
           </a>
         </div>
       </div>
@@ -142,15 +142,16 @@
               <div class="form__input-wrap lg-6 sm-12 col">
                 <label for="" class="form-label">Name</label>
                 <input type="text" class="form-input" placeholder="John" name="name" required>
-                <span class="form-input__icon form-input__icon--name">
-                  <svg width="17" height="21" viewBox="0 0 17 21" xmlns="http://www.w3.org/2000/svg"><title>Layer_1</title><g stroke-width="2" stroke="#416992" fill="none" fill-rule="evenodd"><path d="M8.5 11.1c2.706 0 4.9-2.194 4.9-4.9 0-2.706-2.194-4.9-4.9-4.9-2.706 0-4.9 2.194-4.9 4.9 0 2.706 2.194 4.9 4.9 4.9zM1 20v-3.7c0-2.8 2.3-5.1 5.1-5.1h4.8c2.8 0 5.1 2.3 5.1 5.1V20H1z"/></g></svg>
+                <span class="form-input__icon form-input__icon--name">                  
+                  @@include("img/svg-icons/input-name-icon.svg") 
+
                 </span>
               </div>
               <div class="form__input-wrap lg-6 sm-12 col">
                 <label for="" class="form-label">Email</label>
                 <input type="email" class="form-input form-input--mail" placeholder="John@mail.com" name="E-mail" required>
                 <span class="form-input__icon form-input__icon--email">
-                  <svg width="23" height="16" viewBox="0 0 23 16" xmlns="http://www.w3.org/2000/svg"><title>2</title><g stroke-width="2" stroke="#416992" fill="none" fill-rule="evenodd"><path d="M1.4 1h20.1v13.3H1.4z"/><path d="M21.5 1L11.4 7.7 1.4 1"/></g></svg>
+                  @@include("img/svg-icons/input-email-icon.svg") 
                 </span>
               </div>
             </div>
@@ -158,22 +159,22 @@
               <label for="" class="form-label">How can we help you?</label>
               <textarea name="" id="" cols="30" rows="6" class="form__textarea" name="Message" placeholder="Type your text here..." required></textarea>
               <span class="form__textarea-icon">
-                <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg"><title>3</title><g stroke-width="2" stroke="#416992" fill="none" fill-rule="evenodd"><path d="M1.2 1.2v14.7h4.4l.1 2.9 4-2.9h12V1.2zM11.7 4.9v6.4M8.5 8.1h6.4"/></g></svg>
+                @@include("img/svg-icons/textarea-icon.svg")  
               </span>
             </div>
-            <div class="form__inputs form__inputs--code  row lg-6 sm-12">
+            <div class="form__inputs form__inputs--code  row lg-6 sm-12">  
               <div class="form__input-wrap col lg-6">
                 <label for="" class="form-label">Code</label>
                 <input type="text" class="form-input form-input--code" placeholder="Enter code" name="Code" required>
                 <span class="form-input__icon form-input__icon--code">
-                  <svg width="16" height="21" viewBox="0 0 16 21" xmlns="http://www.w3.org/2000/svg"><title>4</title><g stroke-width="2" stroke="#416992" fill="none" fill-rule="evenodd"><path d="M1.2 8.6h13.6v10.9H1.2zM3.2 5.9c0-2.6 2.1-4.8 4.8-4.8 2.7 0 4.8 2.1 4.8 4.8M3.2 5.9v2.7M12.8 5.9v2.7"/></g></svg>
+                  @@include("img/svg-icons/input-code-icon.svg") 
                 </span>
               </div>                  
               <div class="form__code-image col">
                 <img src="img/code-img.jpg" alt="">
                 <a href="#" class="form__code-link"><span class="form__code-underline ">Show a different image</span>
-                  <span class="form__code-link-icon">
-                  <svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><title>refresh icon</title><g fill="#426B95" fill-rule="evenodd"><path d="M14 4.917h-3.25c-.25 0-.417-.167-.417-.417 0-.25.167-.417.417-.417h2.833V1.25c0-.25.167-.417.417-.417.25 0 .417.167.417.417V4.5c0 .083-.084.25-.084.333-.083 0-.25.084-.333.084zM.5 13.333c-.25 0-.417-.166-.417-.416v-3.25c0-.25.167-.417.417-.417h3.25c.25 0 .417.167.417.417 0 .25-.167.416-.417.416H.917v2.834c0 .25-.167.416-.417.416z"/><path d="M13.833 3.833C12.583 1.417 10.083 0 7.417 0 3.5 0 .333 3.083.167 6.917V7c0 .167.166.333.333.417.25 0 .417-.084.5-.334V7C1.167 3.583 4 .833 7.5.833c2.417 0 4.583 1.334 5.75 3.417.083.167.333.25.583.167.084-.084.167-.417 0-.584zM14.167 7c-.417 0-.417.417-.417.417-.167 3.416-3 6.166-6.5 6.166-2.417 0-4.583-1.333-5.75-3.416C1.417 10 1.167 9.917.917 10c-.167.083-.25.333-.167.583C2 13 4.5 14.417 7.167 14.417c4 0 7.25-3.084 7.416-7 0-.25-.166-.417-.416-.417z"/></g></svg>
+                  <span class="form__code-link-icon">                  
+                  @@include("img/svg-icons/refresh-icon.svg") 
                 </span>
                 </a>
                 
@@ -194,13 +195,13 @@
       </div>
         <div class="footer-social col lg-4 sm-12" >
           <a href="#" class="footer-social__link footer-social__link--fb">
-            <svg width="13" height="26" viewBox="0 0 13 26" xmlns="http://www.w3.org/2000/svg"><title>fb</title><path d="M8.018 8.3V5.64c0-1 .676-1.232 1.152-1.232h2.923V.015L8.068 0C3.6 0 2.584 3.276 2.584 5.372V8.3H0v4.526h2.584v12.808h5.434V12.826h3.667L12.16 8.3H8.017z" fill="#006AA5" fill-rule="evenodd"/></svg>
+            @@include("img/svg-icons/footer-fb.svg") 
           </a>
           <a href="#" class="footer-social__link footer-social__link--twit">
-            <svg width="32" height="26" viewBox="0 0 32 26" xmlns="http://www.w3.org/2000/svg"><title>path5_1_</title><path d="M31.25 3.006c-1.15.51-2.385.855-3.682 1.01 1.323-.794 2.34-2.05 2.82-3.547-1.24.734-2.612 1.267-4.073 1.555C25.145.778 23.48 0 21.635 0c-3.54 0-6.41 2.87-6.41 6.41 0 .504.056.993.165 1.463-5.328-.268-10.052-2.82-13.214-6.7-.552.947-.868 2.048-.868 3.224 0 2.224 1.13 4.186 2.852 5.336C3.11 9.7 2.12 9.41 1.256 8.93v.082c0 3.106 2.21 5.697 5.142 6.287-.538.145-1.105.224-1.69.224-.412 0-.813-.042-1.205-.116.816 2.547 3.184 4.4 5.99 4.453-2.195 1.72-4.96 2.746-7.964 2.746-.518 0-1.028-.03-1.53-.09 2.838 1.82 6.208 2.88 9.828 2.88 11.793 0 18.242-9.77 18.242-18.24 0-.28-.007-.556-.018-.83 1.25-.905 2.34-2.034 3.198-3.32z" fill="#006AA5" fill-rule="evenodd"/></svg>
+            @@include("img/svg-icons/footer-twit.svg") 
           </a>
           <a href="#" class="footer-social__link footer-social__link--insta">
-            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg"><title>Group</title><g fill="#006AA5" fill-rule="evenodd"><path d="M18.958 26H7.042C3.16 26 0 22.84 0 18.958V7.042C0 3.16 3.16 0 7.042 0h11.916C22.84 0 26 3.16 26 7.042v11.916C26 22.84 22.84 26 18.958 26zM7.042 2.167c-2.688 0-4.875 2.187-4.875 4.875v11.916c0 2.688 2.187 4.875 4.875 4.875h11.916c2.688 0 4.875-2.187 4.875-4.875V7.042c0-2.688-2.187-4.875-4.875-4.875H7.042z"/><path d="M13 19.5c-3.584 0-6.5-2.916-6.5-6.5S9.416 6.5 13 6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5zm0-10.833c-2.39 0-4.333 1.944-4.333 4.333 0 2.39 1.944 4.333 4.333 4.333 2.39 0 4.333-1.944 4.333-4.333 0-2.39-1.944-4.333-4.333-4.333z"/><ellipse cx="19.906" cy="6.094" rx="1.49" ry="1.49"/></g></svg>
+            @@include("img/svg-icons/footer-insta.svg") 
           </a>
           <p class="footer-social__text">Copyright © 2016 Identi. All rights reserved</p>
         </div>

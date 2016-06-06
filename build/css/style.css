@@ -394,7 +394,7 @@ h4::-moz-selection,
 h5::-moz-selection,
 h6::-moz-selection {
   background-color: #1c93d5;
-  color: #FFF;
+  color: #fff;
 }
 p::selection,
 h1::selection,
@@ -404,7 +404,7 @@ h4::selection,
 h5::selection,
 h6::selection {
   background-color: #1c93d5;
-  color: #FFF;
+  color: #fff;
 }
 input {
   font-family: "Montserrat";
@@ -739,50 +739,56 @@ button:focus {
   width: 60px;
   height: 40px;
   background: url("../img/partner1_1x.png") no-repeat;
+  background-size: 60px auto;
 }
 .partners__link--888:hover {
-  background: url("../img/partner1_1x-hover.png") no-repeat;
+  background-image: url("../img/partner1_1x-hover.png");
 }
 .partners__link--lad {
   width: 140px;
   height: 23px;
   background: url("../img/partner2_1x.png") no-repeat;
+  background-size: 140px auto;
 }
 .partners__link--lad:hover {
-  background: url("../img/partner2_1x-hover.png") no-repeat;
+  background-image: url("../img/partner2_1x-hover.png");
 }
 .partners__link--ell {
   width: 120px;
   height: 27px;
   background: url("../img/partner3_1x.png") no-repeat;
+  background-size: 120px auto;
 }
 .partners__link--ell:hover {
-  background: url("../img/partner3_1x-hover.png") no-repeat;
+  background-image: url("../img/partner3_1x-hover.png");
 }
 .partners__link--leo {
   width: 150px;
   height: 37px;
   background: url("../img/partner4_1x.png") no-repeat;
+  background-size: 150px auto;
 }
 .partners__link--leo:hover {
-  background: url("../img/partner4_1x-hover.png") no-repeat;
+  background-image: url("../img/partner4_1x-hover.png");
 }
 .partners__link--titan {
   width: 70px;
   height: 34px;
   background: url("../img/partner5_1x.png") no-repeat;
+  background-size: 70px auto;
 }
 .partners__link--titan:hover {
-  background: url("../img/partner5_1x-hover.png") no-repeat;
+  background-image: url("../img/partner5_1x-hover.png");
 }
 .partners__link--europa {
   width: 55px;
   height: 39px;
   background: url("../img/partner6_1x.png") no-repeat;
+  background-size: 55px auto;
 }
 .partners__link--europa:hover {
   height: 39px;
-  background: url("../img/partner6_1x-hover.png") no-repeat;
+  background-image: url("../img/partner6_1x-hover.png");
 }
 @media (max-width: 1000px) {
   .partners {
@@ -798,6 +804,84 @@ button:focus {
   }
   .partners__img:nth-last-child(2) {
     padding-bottom: 0;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .partners__link--888 {
+    background-image: url("../img/partner1_2x.png");
+  }
+  .partners__link--888:hover {
+    background-image: url("../img/partner1_2x-hover.png");
+  }
+  .partners__link--lad {
+    background-image: url("../img/partner2_2x.png");
+  }
+  .partners__link--lad:hover {
+    background-image: url("../img/partner2_2x-hover.png");
+  }
+  .partners__link--ell {
+    background-image: url("../img/partner3_2x.png");
+  }
+  .partners__link--ell:hover {
+    background-image: url("../img/partner3_2x-hover.png");
+  }
+  .partners__link--leo {
+    background-image: url("../img/partner4_2x.png");
+  }
+  .partners__link--leo:hover {
+    background-image: url("../img/partner4_2x-hover.png");
+  }
+  .partners__link--titan {
+    background-image: url("../img/partner5_2x.png");
+  }
+  .partners__link--titan:hover {
+    background-image: url("../img/partner5_2x-hover.png");
+  }
+  .partners__link--europa {
+    background-image: url("../img/partner6_2x.png");
+  }
+  .partners__link--europa:hover {
+    height: 39px;
+    background-image: url("../img/partner6_2x-hover.png");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .partners__link--888 {
+    background-image: url("../img/partner1_3x.png");
+  }
+  .partners__link--888:hover {
+    background-image: url("../img/partner1_3x-hover.png");
+  }
+  .partners__link--lad {
+    background-image: url("../img/partner2_3x.png");
+  }
+  .partners__link--lad:hover {
+    background-image: url("../img/partner2_3x-hover.png");
+  }
+  .partners__link--ell {
+    background-image: url("../img/partner3_3x.png");
+  }
+  .partners__link--ell:hover {
+    background-image: url("../img/partner3_3x-hover.png");
+  }
+  .partners__link--leo {
+    background-image: url("../img/partner4_3x.png");
+  }
+  .partners__link--leo:hover {
+    background-image: url("../img/partner4_3x-hover.png");
+  }
+  .partners__link--titan {
+    background-image: url("../img/partner5_3x.png");
+  }
+  .partners__link--titan:hover {
+    background-image: url("../img/partner5_3x-hover.png");
+  }
+  .partners__link--europa {
+    background-image: url("../img/partner6_3x.png");
+  }
+  .partners__link--europa:hover {
+    height: 39px;
+    background-image: url("../img/partner6_3x-hover.png");
   }
 }
 .description {

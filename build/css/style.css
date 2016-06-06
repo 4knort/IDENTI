@@ -1460,6 +1460,7 @@ button:focus {
 }
 .author__link {
   background: url("../img/difiz_logo.png");
+  background-size: 72px;
   width: 72px;
   height: 35px;
   display: inline-block;
@@ -1467,6 +1468,7 @@ button:focus {
 }
 .author__link:hover {
   background: url("../img/difiz_logo-hover.png");
+  background-size: 72px;
 }
 @media (max-width: 1000px) {
   .author {
@@ -1484,6 +1486,22 @@ button:focus {
 @media (min-width: 1800px) {
   .main-footer .author {
     padding-right: 100px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .author__link {
+    background-image: url("../img/difiz_logo_2x.png");
+  }
+  .author__link:hover {
+    background-image: url("../img/difiz_logo-hover_2x.png");
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+  .author__link {
+    background-image: url("../img/difiz_logo_3x.png");
+  }
+  .author__link:hover {
+    background-image: url("../img/difiz_logo-hover_3x.png");
   }
 }
 @media (max-width: 1000px) {

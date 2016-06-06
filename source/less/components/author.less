@@ -14,12 +14,18 @@
   }
   &__link{
     background: url("../img/difiz_logo.png");
+    -webkit-background-size: 72px;
+         -o-background-size: 72px;
+            background-size: 72px;
     width: 72px;
     height: 35px;
     display: inline-block;
     vertical-align: top;
     &:hover{
       background: url("../img/difiz_logo-hover.png");
+      -webkit-background-size: 72px;
+           -o-background-size: 72px;
+              background-size: 72px;
     }
   }
 }
@@ -43,5 +49,27 @@
 @media (min-width: 1800px){
   .main-footer .author{
     padding-right: 100px;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .author {
+    &__link {
+      background-image: url("../img/difiz_logo_2x.png");
+      &:hover {
+        background-image: url("../img/difiz_logo-hover_2x.png");
+      }
+    }
+  }
+}
+
+@media (min-resolution: 3dppx) {
+  .author {
+    &__link {
+      background-image: url("../img/difiz_logo_3x.png");
+      &:hover {
+        background-image: url("../img/difiz_logo-hover_3x.png");
+      }
+    }
   }
 }

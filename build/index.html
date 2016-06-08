@@ -23,7 +23,6 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        background: url('img/loader.gif') no-repeat 50% 50%;
         margin: -16px 0 0 -16px;
     }
   </style>
@@ -32,8 +31,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-   <div id="page-preloader"><span class="spinner"></span></div>
-   <div class="loaded-content" style="opacity:0">
+   <div id="page-preloader">
+      <span class="spinner">
+        <?xml version="1.0" encoding="utf-8"?><svg width='70px' height='70px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-facebook"><rect x="0" y="0" width="100" height="100" fill="#ffffff" class="bk"></rect><g transform="translate(20 50)"><rect x="-10" y="-30" width="4" height="60" fill="#1a8ece" opacity="0.6"><animateTransform attributeName="transform" type="scale" from="2" to="1" begin="0s" repeatCount="indefinite" dur="1s" calcMode="spline" keySplines="0.1 0.9 0.4 1" keyTimes="0;1" values="2;1"></animateTransform></rect></g><g transform="translate(50 50)"><rect x="-10" y="-30" width="4" height="60" fill="#1a8ece" opacity="0.8"><animateTransform attributeName="transform" type="scale" from="2" to="1" begin="0.1s" repeatCount="indefinite" dur="1s" calcMode="spline" keySplines="0.1 0.9 0.4 1" keyTimes="0;1" values="2;1"></animateTransform></rect></g><g transform="translate(80 50)"><rect x="-10" y="-30" width="4" height="60" fill="#1a8ece" opacity="0.9"><animateTransform attributeName="transform" type="scale" from="2" to="1" begin="0.2s" repeatCount="indefinite" dur="1s" calcMode="spline" keySplines="0.1 0.9 0.4 1" keyTimes="0;1" values="2;1"></animateTransform></rect></g></svg> 
+      </span>
+   </div>
+   <div class="loaded-content" style="opacity:0"> 
      <header class="main-header">
       <div id="trailer" class="is_overlay">
         <video poster="img/video-img.png" id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
@@ -48,7 +51,7 @@
         </a>
         <div class="header-social to-right">
           <a href="#1" class="header-social__link">Contact us</a>
-          <a href="#1" class="header-social__link header-social__link--fb">
+          <a href="#1" class="header-social__link header-social__link--fb"> 
             <svg width="8" height="16" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg"><title>Shape</title><path d="M4.934 5.108V3.47c0-.614.416-.758.71-.758H7.44V.01L4.965 0C2.215 0 1.59 2.016 1.59 3.306v1.802H0v2.785h1.59v7.882h3.344V7.893H7.19l.293-2.785h-2.55z" fill="#FFF" fill-rule="evenodd"/></svg>
           </a>
           <a href="#1" class="header-social__link header-social__link--twit">           
@@ -234,12 +237,14 @@
       }, 50)
     }
       window.addEventListener('load', function() {
+        setTimeout(function() {
           var content = document.querySelector('.loaded-content');
           var loader = document.querySelector('.spinner')
           var spinner = document.querySelector('#page-preloader')
           loader.style.display = "none";
           spinner.style.display = "none"; 
           fadeIn(content);
+        }, 3000)
           
         
             

@@ -23,7 +23,6 @@
         position: absolute;
         left: 50%;
         top: 50%;
-        background: url('img/loader.gif') no-repeat 50% 50%;
         margin: -16px 0 0 -16px;
     }
   </style>
@@ -32,8 +31,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-   <div id="page-preloader"><span class="spinner"></span></div>
-   <div class="loaded-content" style="opacity:0">
+   <div id="page-preloader">
+      <span class="spinner">
+        @@include("img/loader.svg") 
+      </span>
+   </div>
+   <div class="loaded-content" style="opacity:0"> 
      <header class="main-header">
       <div id="trailer" class="is_overlay">
         <video poster="img/video-img.png" id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto">
@@ -48,7 +51,7 @@
         </a>
         <div class="header-social to-right">
           <a href="#1" class="header-social__link">Contact us</a>
-          <a href="#1" class="header-social__link header-social__link--fb">
+          <a href="#1" class="header-social__link header-social__link--fb"> 
             @@include("img/svg-icons/fb-header.svg")
           </a>
           <a href="#1" class="header-social__link header-social__link--twit">           
@@ -234,12 +237,14 @@
       }, 50)
     }
       window.addEventListener('load', function() {
+        setTimeout(function() {
           var content = document.querySelector('.loaded-content');
           var loader = document.querySelector('.spinner')
           var spinner = document.querySelector('#page-preloader')
           loader.style.display = "none";
           spinner.style.display = "none"; 
           fadeIn(content);
+        }, 3000)
           
         
             

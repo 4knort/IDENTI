@@ -11,19 +11,11 @@
         el = document.querySelector('#video');
         elHeight = el.offsetHeight;
    
-  // timer = setInterval(
-  //    function(event){
-  //     console.log('hi')
-  //       if( el.offsetHeight != elHeight ) {
-   
-  //         //Запомним текущую ширину
-  //         elHeight = el.offsetHeight ;
-   
-  //         header.setAttribute('style', 'height:' + elHeight +('px'));
 
-  //       };
-  //    },interval 
-  // );
+  header.setAttribute('style', 'height:' + elHeight +('px'));
+
+
+
   window.addEventListener('resize', function() {
     if( el.offsetHeight != elHeight ) {
    

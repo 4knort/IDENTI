@@ -14,11 +14,12 @@
     bottom: 0;
     background: transparent;
     z-index: 100500;
+    transform:rotate(90deg);
     }
 
     #page-preloader .spinner {
-        width: 106px;
-        height: 106px;
+        width: 70px;
+        height: 70px;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -68,7 +69,7 @@
         <div class="partners__img"><a href="#" class="partners__link partners__link--lad"></a></div> 
         <div class="partners__img"><a href="#" class="partners__link partners__link--ell"></a></div> 
         <div class="partners__img"><a href="#" class="partners__link partners__link--leo"></a></div> 
-        <div class="partners__img"><a href="#" class="partners__link partners__link--titan"></a></div> 
+        <div class="partners__img partners__img--titan"><a href="#" class="partners__link partners__link--titan"></a></div> 
         <div class="partners__img"><a href="#" class="partners__link partners__link--europa"></a></div>
       </div>
     </header>
@@ -239,6 +240,7 @@
           loader.style.display = "none";
           spinner.style.display = "none"; 
           fadeIn(content);
+          
         
             
       })

@@ -58,7 +58,47 @@
       el.setAttribute('placeholder', placeholder)
     })
   }
+
+
+  //animation form
+  var contacts = document.querySelector('.header-social__link--contact');
+
+  contacts.addEventListener('click', function(event) {
+    window.scrollY = 500;
+
+  })
+
 })();
+
+
+(function ($) {
+  $(document).ready(function() {
+    $('.header-social__link--contact').on('click',  function(event) {
+      event.preventDefault();
+
+      var link = $(this).attr('href', '#contact-form');
+
+      var top = $('#contact-form').offset().top;
+
+      $('body,html').animate({scrollTop: top}, 2000);
+    })
+  })
+})(jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 (function() {
   if(!("FormData" in window)){
     return;

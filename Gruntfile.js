@@ -24,6 +24,17 @@ module.exports = function(grunt){
       }
     },
 
+
+    //sprites
+    sprite:{
+      all: {
+        src: 'build/img/sprites/*.{png, jpg}',
+        dest: 'build/img/sprites/sprites.png',
+        destCss: 'build/img/sprites/sprites.css',
+        padding: 5
+      },
+    },
+
     // grunt-watch
     watch: {
       style: {

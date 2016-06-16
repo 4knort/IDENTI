@@ -1,0 +1,90 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-partner1_1x-hover {
+  background-image: url(sprites.png);
+  background-position: 0px -171px;
+  width: 60px;
+  height: 30px;
+}
+.icon-partner1_1x {
+  background-image: url(sprites.png);
+  background-position: -155px -76px;
+  width: 60px;
+  height: 30px;
+}
+.icon-partner2_1x-hover {
+  background-image: url(sprites.png);
+  background-position: 0px -144px;
+  width: 140px;
+  height: 22px;
+}
+.icon-partner2_1x {
+  background-image: url(sprites.png);
+  background-position: 0px -84px;
+  width: 140px;
+  height: 23px;
+}
+.icon-partner3_1x-hover {
+  background-image: url(sprites.png);
+  background-position: 0px -112px;
+  width: 120px;
+  height: 27px;
+}
+.icon-partner3_1x {
+  background-image: url(sprites.png);
+  background-position: -155px 0px;
+  width: 120px;
+  height: 27px;
+}
+.icon-partner4_1x-hover {
+  background-image: url(sprites.png);
+  background-position: 0px 0px;
+  width: 150px;
+  height: 37px;
+}
+.icon-partner4_1x {
+  background-image: url(sprites.png);
+  background-position: 0px -42px;
+  width: 150px;
+  height: 37px;
+}
+.icon-partner5_1x-hover {
+  background-image: url(sprites.png);
+  background-position: -155px -111px;
+  width: 69px;
+  height: 24px;
+}
+.icon-partner5_1x {
+  background-image: url(sprites.png);
+  background-position: -65px -171px;
+  width: 69px;
+  height: 24px;
+}
+.icon-partner6_1x-hover {
+  background-image: url(sprites.png);
+  background-position: -155px -32px;
+  width: 55px;
+  height: 39px;
+}
+.icon-partner6_1x {
+  background-image: url(sprites.png);
+  background-position: -215px -32px;
+  width: 55px;
+  height: 37px;
+}
